@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/generate_new"
+        android:title="@string/generate_keypair"/>
+    <item
+        android:id="@+id/import_file"
+        android:title="@string/import_file"/>
+    <item
+        android:id="@+id/import_store"
+        android:title="@string/import_store"/>
+</menu>

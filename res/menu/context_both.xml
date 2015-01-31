@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sign"
+        android:showAsAction="never"
+        android:title="@string/sign"/>
+    <item
+        android:id="@+id/verify"
+        android:showAsAction="never"
+        android:title="@string/verify"/>
+    <item
+        android:id="@+id/certificate_details"
+        android:showAsAction="never"
+        android:title="@string/certificate_details"/>
+    <item
+        android:id="@+id/key_details"
+        android:showAsAction="never"
+        android:title="@string/key_details"/>
+    <item
+        android:id="@+id/export_certificate"
+        android:showAsAction="never"
+        android:title="@string/export_certificate"/>
+    <item
+        android:id="@+id/export_key"
+        android:showAsAction="never"
+        android:title="@string/export_key"/>
+    <item
+        android:id="@+id/export_both"
+        android:showAsAction="never"
+        android:title="@string/export_both"/>
+</menu>

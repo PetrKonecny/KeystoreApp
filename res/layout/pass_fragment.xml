@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pass_fragment"
+	android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PassActivity">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/editText1"
+	        android:layout_alignRight="@+id/editText1"
+	        android:layout_below="@+id/editText1"
+	        android:text="@null"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <EditText
+	        android:id="@+id/editText2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="20dp"
+	        android:ems="10"
+	        android:inputType="textPassword" >
+	
+		</EditText>
+	
+	    <TextView
+	        android:id="@+id/TextView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/editText2"
+	        android:layout_alignRight="@+id/editText2"
+	        android:layout_below="@+id/editText2"
+	        android:text="@null"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/TextView2"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="33dp"
+	        android:text="@string/unlock" />
+	
+	    <EditText
+	        android:id="@+id/editText1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="12dp"
+	        android:ems="10"
+	        android:hint="@string/new_password"
+	        android:inputType="textPassword" >
+	
+	        <requestFocus />
+	    </EditText>
+	</RelativeLayout>
+</ScrollView>

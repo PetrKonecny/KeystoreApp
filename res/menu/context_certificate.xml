@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/verify"
+        android:showAsAction="never"
+        android:title="@string/verify"/>
+    <item
+        android:id="@+id/certificate_details"
+        android:showAsAction="never"
+        android:title="@string/certificate_details"/>
+    <item
+        android:id="@+id/export_certificate"
+        android:showAsAction="never"
+        android:title="@string/export_certificate"/>
+    
+    
+</menu>

@@ -1,0 +1,73 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/cryptography_pref"
+        android:key="cryptography_pref">
+        <ListPreference
+            android:defaultValue="1024"
+            android:entries="@array/key_size_values"
+            android:entryValues="@array/key_size_values"
+            android:key="key_size_values"
+            android:summary="Length of private key"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/key_size" />
+        <ListPreference
+            android:defaultValue="RSA"
+            android:entries="@array/pref_algorithm"
+            android:entryValues="@array/pref_algorithm"
+            android:summary="Algorithm used for generating key pair"
+            android:key="pref_algorithm"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_algorithm" />
+        <ListPreference
+            android:defaultValue="BC"
+            android:entries="@array/security_providers"
+            android:entryValues="@array/security_providers"
+            android:key="pref_security_provider"
+            android:summary="Security provider used for cryptography"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_security_provider" />
+        <ListPreference
+            android:defaultValue="SHA1"
+            android:entries="@array/hash_functions"
+            android:entryValues="@array/hash_functions"
+            android:key="pref_hash"
+            android:summary="Hash function used for signing and verification"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_hash" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+	    android:title="@string/issuer_settings"
+	    android:key="issuer_settings">
+		<EditTextPreference
+	        android:name="Common name"
+	        android:summary="Common name used in certificate"
+	        android:title="Common name"
+	        android:key="IssuerCommonName"
+	        android:defaultValue="Test" />
+	    <EditTextPreference
+	        android:name="Organization"
+	        android:summary="Organization used in certificate"
+	        android:title="Organization"
+	        android:key="IssuerOrganization"
+	        android:defaultValue="Test organization" />
+	    <EditTextPreference
+	        android:name="Organization unit"
+	        android:summary="Organization unit used in certificate"
+	        android:title="Organization unit"
+	        android:key="IssuerOrganizationUnit"
+	        android:defaultValue="Test organization unit" />
+	    <CheckBoxPreference
+	        android:name="CA certificates"
+	        android:summary="Set if CA certificate is issued or not"
+	        android:title="Isssue as CA certificate"
+	        android:defaultValue="true" 
+	        android:key="IsCACertificate" />
+	    
+    </PreferenceCategory>
+    
+</PreferenceScreen>
